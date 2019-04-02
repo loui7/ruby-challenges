@@ -17,14 +17,18 @@
 # Beast mode challenge:
 # Ater the above, the program calculates how many years until
 # the user is 100 years old and tells the user. For example, for
-# our user input above (Tom and 40), after outputing 
+# our user input above (Tom and 40), after outputing
 # "Wow! You are 40 years old. Congratulations!"
 # The program also outputs:
 # "Tom, in 60 years you will be 100 years old!"
 
+require "io/console"
+
 puts "What is your name?"
-name = gets.chomp
+name = gets.chomp.capitalize
 puts "Hi #{name}! How old are you?"
 age = gets.chomp.to_i
 puts "Wow! You are #{age} years old. Congratulations!"
-puts "#{name}, in #{100 - age} years you will be 100 years old!"
+puts age >= 100 ? "A centenarian!" : "#{name}, in #{100 - age} years you will be 100 years old!"
+puts "Press any key to continue..."
+STDIN.getch
