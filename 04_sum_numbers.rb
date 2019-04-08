@@ -10,10 +10,9 @@
 # Check your solution by running the tests:
 # ruby tests/04_sum_numbers_test.rb
 
-def sum_numbers (numbers)
-  # Your code here
+def sum_numbers(numbers)
+  return numbers.reduce { |sum, x| sum + x }
 end
-
 
 # OPTIONAL:
 # Go to the tests folder and open 04_sum_numbers_test.rb.
