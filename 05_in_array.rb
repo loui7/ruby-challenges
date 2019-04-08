@@ -1,6 +1,6 @@
 # Methods
 
-# Write a method called 'in_array' which will take 
+# Write a method called 'in_array' which will take
 # two parameteres:
 # One as a string and one as an array of strings
 
@@ -13,10 +13,19 @@
 # Example:
 # "hello", ["hi","howdy","hello"] should return true.
 
-def in_array (needle, haystack)
-  # Your code here
+def in_array(needle, haystack)
+  haystack.each { |hay| return true if hay == needle }
+  return false
 end
 
+def in_array_alt(needle, haystack)
+  for hay in haystack
+    return true if needle == hay
+  end
+  return false
+end
+
+puts in_array_alt("hello", ["hi", "howdy", "hello"])
 
 # Beast Mode:
 
