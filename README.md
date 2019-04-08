@@ -20,4 +20,9 @@
 * 02_input_output
 * 03_largest_number
 * 04_sum_numbers
+<<<<<<< HEAD
 * 05_in_array
+=======
+* 05_in_array
+* 06_definition
+>>>>>>> 0c5142cf57ae7e09850c719182717c4efdd33e24
