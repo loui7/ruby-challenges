@@ -25,6 +25,10 @@ def in_array_alt(needle, haystack)
   return false
 end
 
+def in_array_other_alt(needle, haystack)
+  haystack.include?(needle)
+end
+
 puts in_array_alt("hello", ["hi", "howdy", "hello"])
 
 # Beast Mode:
