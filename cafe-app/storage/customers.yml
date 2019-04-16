@@ -1,0 +1,11 @@
+---
+- !ruby/object:Customer
+  first_name: Louis
+  last_name: Lloyd-Besson
+  date_of_birth: 1999-02-08
+  email: louislb2@gmail.com
+- !ruby/object:Customer
+  first_name: Gary
+  last_name: Cooper
+  date_of_birth: 1944-12-11
+  email: garyc@gmail.com

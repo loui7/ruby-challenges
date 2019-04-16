@@ -1,0 +1,15 @@
+---
+- !ruby/object:Cashier
+  id: 1
+  orders:
+  - !ruby/object:Order
+    id: 1
+    menu_items:
+    - :name: Latte
+      :qty: 6
+    - :name: Scone
+      :qty: 2
+    - :name: Tea
+      :qty: 3
+    customer_email: default@default.default
+    creation_date: -4712-01-01
