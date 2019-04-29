@@ -56,3 +56,18 @@ def solution2
         end
     end
 end
+
+def solution3
+    (1..100).each do |i|
+        case
+        when (i % 3).zero? && (i % 5).zero?
+            puts "FizzBuzz"
+        when (i % 3).zero?
+            puts "Fizz"
+        when (i % 5).zero?
+            puts "Buzz"
+        else
+            puts i
+        end
+    end
+end
