@@ -21,7 +21,6 @@ word_arr.uniq.each do |word|
     puts "#{word} #{word_arr.count(word)}"
 end
 
-
 # Beast Mode:
 # Change your code so that it doesn't matter if capital letters are used,
 # In the above example the result should be:
