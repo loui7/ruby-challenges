@@ -71,3 +71,7 @@ def solution3
         end
     end
 end
+
+def solution4
+    (1..100).each { |i| puts [i.to_s, (i % 3 == 0 ? "Fizz" : "") + (i % 5 == 0 ? "Buzz" : "")].max }
+end
