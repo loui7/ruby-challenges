@@ -30,7 +30,4 @@
 * 12_count_words
 * 13_fibonacci
 * 14_hackerman
-<<<<<<< HEAD
-=======
 * 15_change_letters
->>>>>>> 8bedbac6d45c7bd64aeea2b697014541499015ed
