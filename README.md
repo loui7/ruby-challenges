@@ -33,7 +33,4 @@
 * 15_change_letters
 * 16_palindrome
 * 17_combine_hashes
-<<<<<<< HEAD
-=======
 * 18_find_errors
->>>>>>> c158126e12d2f3261141962b0a82634e02468731

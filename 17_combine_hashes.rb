@@ -21,18 +21,22 @@
 
 
 
-# Test your solution with ruby tests/17_combine_hashes.rb
+# Test your solution with ruby tests/17_combine_hashes_test.rb
+
+# def combine_hashes(hash1, hash2)
+#   hash3 = {}
+
+#   hash1.keys.each do |key|
+#     hash3[key] = hash1[key] + hash2[key] if hash2.key?(key)
+#   end
+
+#   hash2.keys.each do |key|
+#     hash3[key] = hash2[key] unless hash3.key?(key)
+#   end
+
+#   return hash3
+# end
 
 def combine_hashes(hash1, hash2)
-  hash3 = {}
-
-  hash1.keys.each do |key|
-    hash3[key] = hash1[key] + hash2[key] if hash2.key?(key)
-  end
-
-  hash2.keys.each do |key|
-    hash3[key] = hash2[key] unless hash3.key?(key)
-  end
-
-  return hash3
+  hash1.merge(hash2) { |key, val1, val2| val1 + val2 }
 end
