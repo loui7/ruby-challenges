@@ -90,9 +90,9 @@ def order_menu()
       print "How many #{order_item.name}: "
       item_qty = gets.strip.to_i
       order_items.push({
-        :name => order_item.name,
-        :qty => item_qty,
-      })
+                         :name => order_item.name,
+                         :qty => item_qty,
+                       })
     end
   end
 

@@ -1,4 +1,3 @@
-
 class MenuItem
   attr_reader :id, :name, :price, :cost
 

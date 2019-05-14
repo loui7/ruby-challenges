@@ -4,7 +4,7 @@
 # as it is backwards, like "mom" or "racecar".
 
 # Add tests to the 16_palindrome_test.rb file, inside the test folder.
-# The test will check your method takes a word as a string and return 
+# The test will check your method takes a word as a string and return
 # a boolean indicating whether or not the word is a palindrome.
 
 # If your having trouble writing tests, look over previous morning challenges.
@@ -19,7 +19,7 @@
 # Check your solution by running the tests:
 # ruby tests/16_palindrome_test.rb
 
-def palindrome (string)
+def palindrome(string)
   is_pal = true
   (0...((string.length - string.length % 2) / 2)).each do |num|
     is_pal = false if string[num] != string[-(num + 1)]

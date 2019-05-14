@@ -8,6 +8,7 @@ class UniqueTest < Test::Unit::TestCase
       definition.add_word('ruby', 'A precious stone')
     end
   end
+
   def test_definition_total_words
     definition = Definition.new
     definition.add_word('ruby', 'A precious stone')
@@ -15,6 +16,7 @@ class UniqueTest < Test::Unit::TestCase
     definition.add_word('rails', 'Lorem ipsum')
     assert_equal(2, definition.total_words)
   end
+
   def test_definition_lookup
     definition = Definition.new
     definition.add_word('ruby', 'A precious stone')

@@ -16,8 +16,6 @@
 # Check your solution by running:
 # ruby 15_change_letters.rb
 
-
-
 # Your code here
 
 print "Enter input: "; input = gets.chomp

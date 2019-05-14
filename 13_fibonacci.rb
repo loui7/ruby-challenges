@@ -22,11 +22,12 @@
 # Check your solution by running the tests:
 # ruby tests/13_fibonacci_test.rb
 
-def nthFibonacci (n)
+def nthFibonacci(n)
   return 0 if n == 0
+
   fib_arr = [0, 1]
   (1..n - 1).each do
     fib_arr.push(fib_arr[fib_arr.length - 2] + fib_arr[fib_arr.length - 1])
   end
-  return fib_arr[fib_arr.length-1]
+  return fib_arr[fib_arr.length - 1]
 end

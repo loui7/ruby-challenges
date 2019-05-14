@@ -29,49 +29,49 @@
 # Your code here
 
 def solution1
-    for i in 1..100 do
-        if i % 3 == 0 && i % 5 == 0
-            puts "FizzBuzz"
-        elsif i % 3 == 0
-            puts "Fizz"
-        elsif i % 5 == 0
-            puts "Buzz"
-        else
-            puts i
-        end
+  for i in 1..100 do
+    if i % 3 == 0 && i % 5 == 0
+      puts "FizzBuzz"
+    elsif i % 3 == 0
+      puts "Fizz"
+    elsif i % 5 == 0
+      puts "Buzz"
+    else
+      puts i
     end
+  end
 end
 
 def solution2
-    for i in 1..100 do
-        if (i % 3).zero? || (i % 5).zero?
-            print "Fizz" if (i % 3).zero?
-            if (i % 5).zero?
-                puts "Buzz"
-            else
-                print "\n"
-            end
-        else
-            puts i
-        end
+  for i in 1..100 do
+    if (i % 3).zero? || (i % 5).zero?
+      print "Fizz" if (i % 3).zero?
+      if (i % 5).zero?
+        puts "Buzz"
+      else
+        print "\n"
+      end
+    else
+      puts i
     end
+  end
 end
 
 def solution3
-    (1..100).each do |i|
-        case
-        when (i % 15).zero?
-            puts "FizzBuzz"
-        when (i % 3).zero?
-            puts "Fizz"
-        when (i % 5).zero?
-            puts "Buzz"
-        else
-            puts i
-        end
+  (1..100).each do |i|
+    case
+    when (i % 15).zero?
+      puts "FizzBuzz"
+    when (i % 3).zero?
+      puts "Fizz"
+    when (i % 5).zero?
+      puts "Buzz"
+    else
+      puts i
     end
+  end
 end
 
 def solution4
-    (1..100).each { |i| puts [i.to_s, (i % 3 == 0 ? "Fizz" : "") + (i % 5 == 0 ? "Buzz" : "")].max }
+  (1..100).each { |i| puts [i.to_s, (i % 3 == 0 ? "Fizz" : "") + (i % 5 == 0 ? "Buzz" : "")].max }
 end

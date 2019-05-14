@@ -21,9 +21,9 @@ class Definition
 
   def add_word(word, definition)
     @dictionary.push({
-      :word => word,
-      :definition => definition,
-    })
+                       :word => word,
+                       :definition => definition,
+                     })
   end
 
   def lookup(query)

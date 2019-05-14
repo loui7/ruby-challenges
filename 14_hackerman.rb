@@ -15,17 +15,15 @@
 # Check your solution by running:
 # ruby 14_hackerman.rb
 
-
-
 # Your code here
 
 def secure_mainframe
-    print "Enter first input: "; first_input = gets.chomp.downcase
-    print "Enter second input: "; second_input_arr = gets.chomp.downcase.split(' ')
-    second_input_arr.each do |word|
-        first_input.gsub!(/#{word}/, "HIDDEN")
-    end
-    return first_input
+  print "Enter first input: "; first_input = gets.chomp.downcase
+  print "Enter second input: "; second_input_arr = gets.chomp.downcase.split(' ')
+  second_input_arr.each do |word|
+    first_input.gsub!(/#{word}/, "HIDDEN")
+  end
+  return first_input
 end
 
 puts secure_mainframe

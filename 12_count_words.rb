@@ -10,7 +10,6 @@
 
 # Test your solution by running 12_count_words
 
-
 # Your code here
 
 print "Please enter a sentence: "; input = gets.chomp
@@ -18,7 +17,7 @@ print "Please enter a sentence: "; input = gets.chomp
 word_arr = input.split(" ")
 word_arr = word_arr.map(&downcase)
 word_arr.uniq.each do |word|
-    puts "#{word} #{word_arr.count(word)}"
+  puts "#{word} #{word_arr.count(word)}"
 end
 
 # Beast Mode:

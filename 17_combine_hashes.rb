@@ -14,12 +14,10 @@
 # hash2 = { a: 5, b: 2, c: 14}
 # combine_hashes => { a: 8, b: 7, c: 15 }
 
-# Example: 
+# Example:
 # hash1 = {a: "a", b:"b", c:"c"}
 # hash2 = {a: "a", b:"b", c:"c"}
 # combine_hashes => {a: "aa", b:"bb", c:"cc"}
-
-
 
 # Test your solution with ruby tests/17_combine_hashes_test.rb
 

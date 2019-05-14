@@ -34,3 +34,4 @@
 * 16_palindrome
 * 17_combine_hashes
 * 18_find_errors
+* 19_balanced_number
