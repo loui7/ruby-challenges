@@ -14,6 +14,7 @@
 # *E.g.* remove_adjacent_duplicates("abcABCabcABC") should return exactly the same string: "abcABCabcABC"
 
 def remove_adjacent_duplicates(input)
-    # Your code goes here
+    input.split("").each_with_object("") {|letter, memo| memo << letter if memo[-1] != letter}
 end
 
+p remove_adjacent_duplicates("abcABCabcABC")
