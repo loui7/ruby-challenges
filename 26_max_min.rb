@@ -17,5 +17,6 @@
 
 
 def max_min(num_string)
-    # your code goes here
+    num_arr = num_string.split.map(&:to_i)
+    return "#{num_arr.max} #{num_arr.min}"
 end
