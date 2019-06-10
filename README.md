@@ -7,6 +7,7 @@
    `git remote add upstream https://github.com/CoderAcademy-BRI/ruby-challenges`
 3. For each challenge (in your fork):
 <<<<<<< HEAD
+<<<<<<< HEAD
    1. Checkout the branch (in your fork)<br/>
       `git checkout -b <challenge_branch>`
    2. Pull down the challenge: <br/>
@@ -60,6 +61,21 @@
      `git push origin master`
 
 ## List of challenge branches
+=======
+    1. Checkout the branch (in your fork)<br/>
+     `git checkout -b <challenge_branch>`
+    3. Pull down the challenge: <br/>
+     `git pull --no-edit upstream <challenge_branch>`
+    4. Complete the challenge
+    5. Add and commit your changes
+    `git add . && git commit -m "<insert commit message>"`
+    6. Checkout master branch and merge challenge branch:<br/>
+    `git checkout master && git merge <challenge_branch>`
+    7. Push to master in your fork:<br/>
+     `git push origin master`
+
+## List of challenge branches
+>>>>>>> 3c92a529364e61ba8b6f34a57b428ad2cc3ee119
 * 01_ruby_intro
 * 02_input_output
 * 03_largest_number
@@ -87,5 +103,8 @@
 * 25_remove_adjacent_duplicates
 * 26_max_min
 * 27_in_array_strict
+<<<<<<< HEAD
 * 28_good_walk
 >>>>>>> d1590d51523066ffed717893428a7f47ddb00feb
+=======
+>>>>>>> 3c92a529364e61ba8b6f34a57b428ad2cc3ee119
