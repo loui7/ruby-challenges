@@ -26,6 +26,9 @@
 # has a file name ending in _spec.rb
 
 def good_walk(walk)
-    # your code goes here
-end
+  return false if walk.length != 10
 
+  steps = Hash.new(0)
+  walk.each { |step| steps[step] += 1}
+  return (steps["n"] - steps["s"] + steps["w"] - steps["e"]).zero?
+end
